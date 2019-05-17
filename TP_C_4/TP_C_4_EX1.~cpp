@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+        int index=0;
+        float note=0,resultat=0;
+        for(index=1;index<5;index++){
+        printf("Note numero %d ",index);
+        scanf("%f",&note);
+        resultat+=note;
+        }
+        resultat=resultat/4;
+        printf("Moyenne des 4 notes : %.2f",resultat);
+        getch();
+}
+
+
