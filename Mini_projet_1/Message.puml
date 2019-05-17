@@ -1,0 +1,20 @@
+@startuml
+
+Le_Process -> La_cuve : Quel_est_ton_niveau()
+La_cuve ->Capteur_haut : Quel_est_ton_etat()
+Capteur_haut-->La_cuve  : T_ETAT
+La_cuve ->Capteur_bas : Quel_est_ton_etat()
+Capteur_bas-->La_cuve  : T_ETAT
+La_cuve --> Le_Process : T_NIVEAU
+
+==REMPLISSAGE==
+note left: SI TROP BAS
+Le_Process->La_vanne : Ferme_toi();
+Le_Process -->La_Pompe : Mets_Toi_En_Marche();
+
+==VIDANGE== 
+Le_Process->La_Pompe : Stoppe_Toi();
+note left : SI TROP HAUT
+Le_Process -> La_vanne  : Ferme_toi();
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+
+C_PROCESS *-- "1" C_VANNE : La_vanne >
+C_PROCESS *-- "1" C_CUVE  : La_cuve >
+C_PROCESS *-- "1" C_POMPE : La_pompe >
+C_CUVE *-- "1" C_CAPTEUR : Capteur_haut >
+C_CUVE *-- "1" C_CAPTEUR : Capteur_bas >
+
+
+@enduml

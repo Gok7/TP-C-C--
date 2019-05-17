@@ -1,0 +1,6 @@
+build/Debug/MinGW-Windows/C_TRANSITION.o: C_TRANSITION.cpp C_TRANSITION.h \
+ C_ETAPE.h
+
+C_TRANSITION.h:
+
+C_ETAPE.h:

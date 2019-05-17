@@ -1,0 +1,6 @@
+build/Debug/MinGW-Windows/C_LISTE_ETAPE.o: C_LISTE_ETAPE.cpp \
+ C_LISTE_ETAPE.h C_ETAPE.h
+
+C_LISTE_ETAPE.h:
+
+C_ETAPE.h:

@@ -1,0 +1,12 @@
+@startuml
+
+
+C_AUTOMATE *-- "1" C_LISTE_ETAPES : Liste_etapes >
+C_AUTOMATE *--  "1" C_LISTE_TRANSITION  : Liste_Transitions >
+C_LISTE_TRANSITION *-- C_TRANSITION
+C_TRANSITION --> C_ETAPE : Etape_predente >
+C_TRANSITION --> C_ETAPE : Etape_suivante >
+C_LISTE_ETAPES *-- 
+
+
+@enduml

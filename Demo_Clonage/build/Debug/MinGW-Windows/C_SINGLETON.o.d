@@ -1,0 +1,3 @@
+build/Debug/MinGW-Windows/C_SINGLETON.o: C_SINGLETON.cpp C_SINGLETON.h
+
+C_SINGLETON.h:
